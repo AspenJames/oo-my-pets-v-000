@@ -26,5 +26,20 @@ class Owner
     "I am a #{self.species}."
   end
 
+  def buy_fish(name)
+    f = Fish.new(name)
+    self.pets[:fishes] << f
+  end
+
+  def buy_cat(name)
+    c = Cat.new(name)
+    self.pets[:cats] << c
+  end
+
+  def buy_dog(name)
+    d = Dog.new(name)
+    self.pets[:dogs] << d
+  end
+
 
 end
